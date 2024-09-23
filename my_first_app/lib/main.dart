@@ -32,6 +32,39 @@ class HomePage extends StatelessWidget {
         ),
         body: Container()
 
+
+
+        //---------------- Container Decoration ---------------------
+        // Container(
+        //   width: double.infinity,
+        //   height: double.infinity,
+        //   color: Colors.blue.shade50,
+        //   child : Center(
+        //   child: Container(
+        //     width: 200,
+        //     height: 200,
+        //     decoration: BoxDecoration(
+        //     color: Colors.blueGrey,
+        //     // borderRadius: BorderRadius.circular(11),
+        //     // borderRadius: BorderRadius.only(topLeft: Radius.circular(21),bottomRight: Radius.circular(21))
+        //     border: Border.all(
+        //       width: 4,
+        //       color: Colors.black
+        //     ),
+        //     boxShadow: [
+        //       BoxShadow(
+        //         // color: Colors.grey.withOpacity(0.5),
+        //         blurRadius: 11,
+        //         spreadRadius: 8,
+        //       )
+        //     ],
+        //     shape: BoxShape.circle
+
+        //     ),
+        //   ),
+        //   )
+        // )
+
         //---------------- List View Sepearted ---------------------
         // ListView.separated(
         //   itemBuilder: (context,index){
