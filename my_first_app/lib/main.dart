@@ -22,7 +22,7 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
 
-    // var names = ['Aqeel','Ali','Ahmed','Abdullah','Ahsan','Faran','Rehman','Rizwan','Amna','Arooba','Aqsa'];
+    var names = ['Aqeel','Ali','Ahmed','Abdullah','Ahsan','Faran','Rehman','Rizwan','Amna','Arooba','Aqsa'];
 
     return Scaffold(
         appBar: AppBar(
@@ -30,9 +30,100 @@ class HomePage extends StatelessWidget {
           title: const Text("Flutter Container"),
           backgroundColor: Colors.blue,
         ),
-        body: Container()
+        body:Container()
 
 
+
+       //---------------- CircleAvatar --------------------
+        // Center(
+        //   child: Container(
+        //     // height: 100,
+        //     // width: 100,
+        //     child: CircleAvatar(
+        //       // backgroundImage: AssetImage('assets/images/one.jpg'),
+        //       child: Text("Aqeel" ,style: TextStyle(fontSize: 21,color: Colors.pink),),
+        //       // backgroundColor: Colors.transparent,
+        //       backgroundColor: Colors.orange,
+        //
+        //
+        //       radius:  100,
+        //     ),
+        //   ),
+        // )
+
+
+      //---------------- List Tile --------------------
+      // ListView.separated(
+      //   itemBuilder: (context,index){
+      //     return ListTile(
+      //       leading : Text('$index'),
+      //       title: Text(names[index]),
+      //       subtitle:Text(("Number")),
+      //       trailing:Icon(Icons.add) ,
+      //     );
+      //   },
+      //   itemCount: names.length,
+      //   // scrollDirection: Axis.horizontal,
+      //   separatorBuilder: (context,index){
+      //     return const Divider(height: 10,thickness: 1,);
+      //   },
+      // )
+
+      //---------------- Margin And Padding ---------------------
+        // Container(
+        //   color: Colors.red,
+        //     margin: EdgeInsets.all(8.0),
+        //     child: Padding(
+        //       padding: const EdgeInsets.all(8.0),
+        //       child: Text("I am Aqeel",style: TextStyle(fontSize: 25),),
+        //     )
+        // )
+
+      //---------------- Padding ---------------------
+        // Padding(
+        //   // padding: const EdgeInsets.all(8.0),
+        //   padding: const EdgeInsets.only(top: 11,left: 45),
+        //   child: Text("I am Aqeel",style: TextStyle(fontSize: 25),),
+        // )
+
+
+        // ---------------- Expand Widget ---------------------
+        // Row(
+        //   // mainAxisAlignment: MainAxisAlignment.center,
+        //   children: [
+        //     Expanded(
+        //       flex : 2,
+        //       child: Container(
+        //         width: 50,
+        //         height: 100,
+        //         color: Colors.amberAccent,
+        //       ),
+        //     ),
+        //     Expanded(
+        //       child: Container(
+        //         width: 50,
+        //         height: 100,
+        //         color: Colors.green,
+        //       ),
+        //     ),
+        //     Expanded(
+        //       flex: 4,
+        //       child: Container(
+        //         width: 50,
+        //         height: 100,
+        //         color: Colors.pink,
+        //       ),
+        //     ),
+        //     Expanded(
+        //       child:
+        //       Container(
+        //         width: 50,
+        //         height: 100,
+        //         color: Colors.red,
+        //       ),
+        //     ),
+        //   ],
+        // )
 
         //---------------- Container Decoration ---------------------
         // Container(
