@@ -9,8 +9,16 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
       title: 'Flutter Basics',
+      debugShowCheckedModeBanner: false,
+      // theme: ThemeData(
+      //   primarySwatch: Colors.blue,
+      //   textTheme: TextTheme(
+      //     headlineLarge: TextStyle(fontSize: 18.0),
+      //     headlineSmall: TextStyle(fontSize: 14.0),
+      //   ),
+      // ),
       home: HomePage(),
     );
   }
@@ -21,20 +29,149 @@ class HomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    // var names = ['Aqeel','Ali','Ahmed','Abdullah','Ahsan','Faran','Rehman','Rizwan','Amna','Arooba','Aqsa'];
+    // var emailText = TextEditingController();
+    // var passText = TextEditingController();
+    // var time = DateTime.now();
 
-    var names = ['Aqeel','Ali','Ahmed','Abdullah','Ahsan','Faran','Rehman','Rizwan','Amna','Arooba','Aqsa'];
-
+    // Various commented widgets here...
     return Scaffold(
         appBar: AppBar(
           centerTitle: true,
           title: const Text("Flutter Container"),
           backgroundColor: Colors.blue,
         ),
-        body:Container()
+        body: Container()
 
 
 
-       //---------------- CircleAvatar --------------------
+      //---------------- Date and Time Picker -------------------
+      // Center(
+        //   child: Column(
+        //     mainAxisAlignment: MainAxisAlignment.center,
+        //     children: [
+        //       Text(
+        //         "Select Date",
+        //         style: TextStyle(fontSize: 28),
+        //       ),
+        //       ElevatedButton(
+        //           onPressed: () async {
+        //             DateTime? datePick = await showDatePicker(
+        //                 context: context,
+        //                 firstDate: DateTime(2021),
+        //                 lastDate: DateTime(2024));
+        //
+        //             if (datePick != null) {
+        //               print(
+        //                   "Selected Date ${datePick.day}- ${datePick.month} -${datePick.year} ");
+        //             }
+        //           },
+        //           child: Text("Show")),
+        //       ElevatedButton(
+        //         onPressed: () async {
+        //           TimeOfDay? dateTime = await showTimePicker(context: context, initialTime: TimeOfDay.now(), initialEntryMode: TimePickerEntryMode.input);
+        //           if (dateTime != null) {
+        //             print(
+        //                 "Selected Time ${dateTime.hour}- ${dateTime.minute} ${dateTime.period} ");
+        //           }
+        //         },
+        //         child: Text("Select Time"),
+        //       )
+        //     ],
+        //   ),
+        // )
+
+        //---------------- Get Current Time and Date -------------------
+        // Center(
+        //   child: Container(
+        //     width: 200,
+        //     height: 200,
+        //     child: Column(
+        //       mainAxisAlignment: MainAxisAlignment.center,
+        //       children: [
+        //         Text("Current Time ${time.year}"),
+        //
+        //       ],
+        //     ),
+        //   ),
+        // )
+
+        //---------------- Taking Input from User-------------------
+        // Center(
+        //     child: Container(
+        //         width: 300,
+        //         child: Column(
+        //           mainAxisAlignment: MainAxisAlignment.center,
+        //           children: [
+        //             TextField(
+        //               controller: emailText ,
+        //               decoration: InputDecoration(
+        //                 hintText: 'Enter Email',
+        //                   focusedBorder: OutlineInputBorder(
+        //                       borderRadius: BorderRadius.circular(12),
+        //                       borderSide:
+        //                           BorderSide(color: Colors.orange, width: 2)),
+        //                   enabledBorder: OutlineInputBorder(
+        //                       borderRadius: BorderRadius.circular(12),
+        //                       borderSide:
+        //                           BorderSide(color: Colors.blue, width: 2)),
+        //                   // suffixText: "UserName Exist",
+        //                   suffixIcon: IconButton(
+        //                       onPressed: () {},
+        //                       icon: Icon(
+        //                         Icons.remove_red_eye,
+        //                         color: Colors.orange,
+        //                       )),
+        //                   prefixIcon: Icon(Icons.email,color: Colors.orange,)),
+        //             ),
+        //             Container(
+        //               height: 10,
+        //             ),
+        //             TextField(
+        //               controller: passText,
+        //               obscureText: true,
+        //               // obscuringCharacter: '-',
+        //               decoration: InputDecoration(
+        //                 hintText: 'Enter Passsword',
+        //                   border: OutlineInputBorder(
+        //                       borderRadius: BorderRadius.circular(12),
+        //                       borderSide:
+        //                       BorderSide(
+        //                           color: Colors.orange
+        //                       )
+        //                   )
+        //               ),
+        //             ),
+        //
+        //             ElevatedButton(onPressed: (){
+        //               String name  = emailText.text.toString();
+        //               String pass = passText.text.toString();
+        //               print("Email $name and Password $pass" );
+        //             }, child: Text("Login"))
+        //
+        //           ],
+        //         )))
+
+        //---------------- Card -------------------
+        // Center(
+        //   child: Card(
+        //     elevation: 20,
+        //     child: Padding(
+        //       padding: const EdgeInsets.all(8),
+        //       child: Text("I am Aqeel",style:TextStyle(fontSize: 25) ,),
+        //     ),
+        //   ),
+        // )
+
+        //---------------- Manage Themes --------------------
+        // Column(
+        //   children: [
+        //     Text("Aqeel",style: Theme.of(context).textTheme.headlineLarge,),
+        //     Text("Aqeel",style: Theme.of(context).textTheme.headlineSmall,)
+        //   ],
+        // )
+
+        //---------------- CircleAvatar --------------------
         // Center(
         //   child: Container(
         //     // height: 100,
@@ -51,25 +188,24 @@ class HomePage extends StatelessWidget {
         //   ),
         // )
 
+        //---------------- List Tile --------------------
+        // ListView.separated(
+        //   itemBuilder: (context,index){
+        //     return ListTile(
+        //       leading : Text('$index'),
+        //       title: Text(names[index]),
+        //       subtitle:Text(("Number")),
+        //       trailing:Icon(Icons.add) ,
+        //     );
+        //   },
+        //   itemCount: names.length,
+        //   // scrollDirection: Axis.horizontal,
+        //   separatorBuilder: (context,index){
+        //     return const Divider(height: 10,thickness: 1,);
+        //   },
+        // )
 
-      //---------------- List Tile --------------------
-      // ListView.separated(
-      //   itemBuilder: (context,index){
-      //     return ListTile(
-      //       leading : Text('$index'),
-      //       title: Text(names[index]),
-      //       subtitle:Text(("Number")),
-      //       trailing:Icon(Icons.add) ,
-      //     );
-      //   },
-      //   itemCount: names.length,
-      //   // scrollDirection: Axis.horizontal,
-      //   separatorBuilder: (context,index){
-      //     return const Divider(height: 10,thickness: 1,);
-      //   },
-      // )
-
-      //---------------- Margin And Padding ---------------------
+        //---------------- Margin And Padding ---------------------
         // Container(
         //   color: Colors.red,
         //     margin: EdgeInsets.all(8.0),
@@ -79,13 +215,12 @@ class HomePage extends StatelessWidget {
         //     )
         // )
 
-      //---------------- Padding ---------------------
+        //---------------- Padding ---------------------
         // Padding(
         //   // padding: const EdgeInsets.all(8.0),
         //   padding: const EdgeInsets.only(top: 11,left: 45),
         //   child: Text("I am Aqeel",style: TextStyle(fontSize: 25),),
         // )
-
 
         // ---------------- Expand Widget ---------------------
         // Row(
@@ -167,7 +302,7 @@ class HomePage extends StatelessWidget {
         //     return const Divider(height: 16,thickness: 10,);
         //   },
         // )
-        
+
         //---------------- List View Builder ---------------------
         // ListView.builder(
         //   itemBuilder: (context,index){
@@ -177,7 +312,6 @@ class HomePage extends StatelessWidget {
         //   itemExtent: 100,
         //   scrollDirection: Axis.horizontal,
         // )
-        
 
         //---------------- List View ---------------------
         // ListView(
@@ -337,7 +471,6 @@ class HomePage extends StatelessWidget {
         //   ],
         // ))
 
-
         //---------------- Ink Well ---------------------
         // Center(
         //   child: InkWell(
@@ -374,7 +507,6 @@ class HomePage extends StatelessWidget {
         //   ],
         // ),
         // )
-
 
         //---------------- Row ---------------------
         // Container(
