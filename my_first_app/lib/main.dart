@@ -41,12 +41,106 @@ class HomePage extends StatelessWidget {
           title: const Text("Flutter Container"),
           backgroundColor: Colors.blue,
         ),
-        body: Container(child:Text("Aqeel"))
+        body: Container()
 
 
 
-      //---------------- Date and Time Picker -------------------
-      // Center(
+      //---------------- Stack -------------------
+        // Stack(
+        //   children: [
+        //     Container(
+        //       height: 200,
+        //       width: 200,
+        //       color: Colors.grey,
+        //     ),
+        //     Container(
+        //       height: 150,
+        //       width: 150,
+        //       color: Colors.yellow,
+        //     ),
+        //     Positioned(
+        //         top: 21,
+        //         left: 21,
+        //         bottom: 21,
+        //         right: 21,
+        //         child: Container(
+        //           height: 150,
+        //           width: 150,
+        //           color: Colors.green,
+        //         ))
+        //   ],
+        // )
+
+        //---------------- Grid View -------------------
+        // GridView.builder(
+        //   gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+        //     crossAxisCount: 3, // Number of items per row
+        //     crossAxisSpacing: 10.0, // Horizontal space between items
+        //     mainAxisSpacing: 10.0, // Vertical space between items
+        //     childAspectRatio: 1.0, // Ratio of width to height for each item
+        //   ),
+        //   itemCount: 20, // Total number of items
+        //   itemBuilder: (context, index) {
+        //     return Container(
+        //       color: Colors.blueAccent,
+        //       child: Center(
+        //         child: Text(
+        //           'Item $index',
+        //           style: TextStyle(color: Colors.white),
+        //         ),
+        //       ),
+        //     );
+        //   },
+        // )
+
+        // Column(
+        //   children: [
+        //       GridView.count(
+        //         shrinkWrap: true, // Makes GridView take only the necessary space
+        //         physics:
+        //             const NeverScrollableScrollPhysics(), // Disables GridView's own scrolling
+        //         crossAxisCount: 3,
+        //         crossAxisSpacing: 11, // Horizontal spacing
+        //         mainAxisSpacing: 12, // Vertical spacing
+        //         children: const [
+        //           ColoredBox(color: Colors.amber),
+        //           ColoredBox(color: Colors.brown),
+        //           ColoredBox(color: Colors.grey),
+        //           ColoredBox(color: Colors.blue),
+        //           ColoredBox(color: Colors.green),
+        //           ColoredBox(color: Colors.red),
+        //           ColoredBox(color: Colors.purple),
+        //           ColoredBox(color: Colors.pink),
+        //         ],
+        //       ),
+        //
+        //
+        //     const SizedBox(height: 100), // Spacer
+        //
+        //     // Second GridView
+        //    GridView.extent(
+        //         shrinkWrap: true, // Makes GridView take only the necessary space
+        //         physics:
+        //             const NeverScrollableScrollPhysics(), // Disables GridView's own scrolling
+        //         maxCrossAxisExtent: 100, // Adjusted for better visibility
+        //         crossAxisSpacing: 10,
+        //         mainAxisSpacing: 10,
+        //         children: const [
+        //           ColoredBox(color: Colors.amber),
+        //           ColoredBox(color: Colors.brown),
+        //           ColoredBox(color: Colors.grey),
+        //           ColoredBox(color: Colors.blue),
+        //           ColoredBox(color: Colors.green),
+        //           ColoredBox(color: Colors.red),
+        //           ColoredBox(color: Colors.purple),
+        //           ColoredBox(color: Colors.pink),
+        //         ],
+        //       ),
+        //   ],
+        // ),
+
+        //---------------- Date and Time Picker -------------------
+        // Center(
         //   child: Column(
         //     mainAxisAlignment: MainAxisAlignment.center,
         //     children: [
