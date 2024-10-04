@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+// import 'package:my_first_app/my_Profile.dart';
 
 void main() {
   runApp(const MyApp());
@@ -29,6 +30,8 @@ class HomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    // var nameController = TextEditingController();
+
     // var names = ['Aqeel','Ali','Ahmed','Abdullah','Ahsan','Faran','Rehman','Rizwan','Amna','Arooba','Aqsa'];
     // var emailText = TextEditingController();
     // var passText = TextEditingController();
@@ -41,11 +44,139 @@ class HomePage extends StatelessWidget {
           title: const Text("Flutter Container"),
           backgroundColor: Colors.blue,
         ),
-        body: Container()
+        body: Center()
 
+        //---------------- Move Text from one screen to other -------------------
+        // Center(
+        //     child: Container(
+        //   width: 300,
+        //   child: Column(
+        //     mainAxisAlignment: MainAxisAlignment.center,
+        //     children: [
+        //       Text(
+        //         "DashBoard Screen",
+        //         style: TextStyle(
+        //           fontSize: 24,
+        //         ),
+        //       ),
+        //       const SizedBox(height: 11),
+        //       TextField(
+        //         controller: nameController,
+        //       ),
+        //       const SizedBox(height: 11),
+        //       ElevatedButton(
+        //         onPressed: () {
+        //           Navigator.push(
+        //             context,
+        //             MaterialPageRoute(builder: (context) => MyProfile(nameController.text.toString(), nameFromHome: nameController.text.toString(),)),
+        //           );
+        //         },
+        //         style: ElevatedButton.styleFrom(backgroundColor: Colors.blue),
+        //         child: const Text(
+        //           'My Profile',
+        //           style: TextStyle(
+        //               fontSize: 34,
+        //               fontWeight: FontWeight.bold), // Reduced font size
+        //         ),
+        //       ),
+        //     ],
+        //   ),
+        // ))
 
+        //---------------- Rich Text-------------------
+        // RichText(
+        //   text: TextSpan(
+        //     style: TextStyle(color: Colors.grey,
+        //     fontSize: 21,
+        //     ),
+        //     children:
+        //     [
+        //       TextSpan(
+        //         text : "Hello",
+        //       ),
+        //       TextSpan(
+        //         text : "Aqeel", style : TextStyle(color: Colors.blue,
+        //     fontSize: 31,)
+        //       )
+        //     ]
+        //   )
 
-      //---------------- Stack -------------------
+        // )
+
+        //---------------- Sized Box -------------------
+        // Center(
+        //   child :  SizedBox(
+        //     child : ElevatedButton(onPressed: (){
+
+        //     }, child: Text("My Button",style: TextStyle(color: Colors.black),),
+        //     style: ElevatedButton.styleFrom(
+        //       backgroundColor: const Color.fromARGB(255, 139, 128, 142)
+        //     ),
+        //     )
+        //   )
+        // )
+
+        //---------------- Wrap Widgets -------------------
+        //  Container(
+        //   width : double.infinity,
+        // child : Wrap(
+        //   direction: Axis.horizontal,
+        //   // direction: Axis.vertical,
+        //   alignment: WrapAlignment.center,
+        //   spacing: 11,
+        //   runSpacing : 11,
+        //   children: [
+        //     Container(
+        //           height: 70,
+        //           width: 70,
+        //           color: Colors.greenAccent,
+        //         ),
+        //         Container(
+        //           height: 70,
+        //           width: 70,
+        //           color: Colors.blue,
+        //         ),
+        //         Container(
+        //           height:70,
+        //           width: 70,
+        //           color: Colors.orange,
+        //         ),
+        //         Container(
+        //           height: 70,
+        //           width:70,
+        //           color: Colors.red,
+        //         ),
+        //         Container(
+        //           height: 70,
+        //           width: 70,
+        //           color: Colors.greenAccent,
+        //         ),
+        //         Container(
+        //           height: 70,
+        //           width: 70,
+        //           color: Colors.blue,
+        //         ),
+        //         Container(
+        //           height: 70,
+        //           width: 70,
+        //           color: Colors.red,
+        //         ),
+        //         Container(
+        //           height: 70,
+        //           width: 70,
+        //           color: Colors.greenAccent,
+        //         ),
+        //         Container(
+        //           height: 70,
+        //           width: 70,
+        //           color: Colors.blue,
+        //         ),
+
+        //   ],
+        // ),
+        // )
+
+        //---------------- Stack -------------------
         // Stack(
         //   children: [
         //     Container(
