@@ -12,6 +12,9 @@
       <excludeFolder url="file://$MODULE_DIR$/stateless_statefull_widgets/.dart_tool" />
       <excludeFolder url="file://$MODULE_DIR$/stateless_statefull_widgets/.pub" />
       <excludeFolder url="file://$MODULE_DIR$/stateless_statefull_widgets/build" />
+      <excludeFolder url="file://$MODULE_DIR$/bmi_project/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/bmi_project/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/bmi_project/build" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

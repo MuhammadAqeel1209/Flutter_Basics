@@ -25,11 +25,19 @@ class MyApp extends StatelessWidget {
   }
 }
 
-class HomePage extends StatelessWidget {
+class HomePage extends StatefulWidget {
   const HomePage({super.key});
 
   @override
+  State<HomePage> createState() => _HomePageState();
+}
+
+class _HomePageState extends State<HomePage> {
+  @override
   Widget build(BuildContext context) {
+    // double _width = 100.0;
+    // double _height = 100.0;
+
     // var nameController = TextEditingController();
 
     // var names = ['Aqeel','Ali','Ahmed','Abdullah','Ahsan','Faran','Rehman','Rizwan','Amna','Arooba','Aqsa'];
@@ -45,6 +53,46 @@ class HomePage extends StatelessWidget {
           backgroundColor: Colors.blue,
         ),
         body: Center()
+
+        //---------------- Color Gradient -------------------
+        //   Center(
+        //     child: Container(
+        //       decoration: BoxDecoration(
+        //         gradient: LinearGradient(
+        // colors:[
+        // Colors.yellow,
+        // Colors.green,
+        // Colors.brown,
+        // Colors.blue,
+        // ]
+        //
+        //       ),
+        //     ),
+        //     ),
+        //   )
+        //
+
+        //---------------- Container Animation -------------------
+        //   Column(
+        //     mainAxisAlignment: MainAxisAlignment.center,
+        //     children: [
+        //       AnimatedContainer(
+        //           height: _height,
+        //           width: _width,
+        //           color: Colors.yellow,
+        //           duration: Duration(seconds: 2)),
+        //       ElevatedButton(
+        //           onPressed: () {
+        //             setState(() {
+        //               _width = 10.0;
+        //               _height = 20.0;
+        //             });
+        //
+        //           },
+        //           child: Text('Animate'))
+        //     ],
+        //   ),
+        // ),
 
         //---------------- Move Text from one screen to other -------------------
         // Center(
